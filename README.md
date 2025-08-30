@@ -6,8 +6,8 @@ Implementation Flashcard App
 ### App Description
 ### App Walk-though
 
-<img src="[url](https://collection.cloudinary.com/drbtamwje/7226e1c3f3c7435f2225cadf9b3e2594)" width=200><br>
-<img src="[url](https://collection.cloudinary.com/drbtamwje/db92f73a61031eb580227d34b0097f40)" width=200><br>
+<img src="https://res.cloudinary.com/drbtamwje/image/upload/v1756583329/WhatsApp-Video-2025-08-30-at-13.56.35_lnyspl.gif" width=200><br>
+<img src="https://res.cloudinary.com/drbtamwje/image/upload/v1756582810/WhatsApp-Video-2025-08-30-at-13.56.37_xs2gse.gif" width=200><br>
 
 
 ## Required
