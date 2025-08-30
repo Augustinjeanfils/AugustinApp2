@@ -19,63 +19,70 @@
             android:layout_height="200dp"
             android:layout_alignParentEnd="true"
             android:layout_marginEnd="-4dp"
+            android:background="@drawable/card_background"
             android:gravity="center"
             android:text="Who is the 44th president of the United States ?"
             android:textColor="#333"
             android:textSize="40sp"
             tools:ignore="MissingConstraints" />
 
-        <TextView
-            android:id="@+id/textView_response"
+        <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="200dp"
-            android:layout_alignParentTop="true"
-            android:layout_alignParentEnd="true"
-            android:layout_marginTop="-3dp"
-            android:layout_marginEnd="-31dp"
-            android:gravity="center"
-            android:text="Barrack Obama"
-            android:textColor="#333"
-            android:textSize="40sp"
-            tools:ignore="MissingConstraints" />
-
-        <androidx.constraintlayout.widget.ConstraintLayout
-            android:layout_width="409dp"
             android:layout_height="529dp"
             app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
             app:layout_constraintStart_toStartOf="parent"
-            tools:layout_editor_absoluteY="201dp"
-            android:visibility="gone"
+            android:orientation="vertical"
+            android:gravity="center"
+            app:layout_constraintTop_toBottomOf="@+id/textView_question"
             tools:ignore="MissingConstraints">
 
+
             <TextView
-                android:id="@+id/textView5"
-                android:layout_width="wrap_content"
+                android:id="@+id/textViewBadResponse1"
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:layout_marginBottom="29dp"
                 android:text="Bill Clinton"
-                tools:layout_editor_absoluteX="170dp"
-                tools:layout_editor_absoluteY="182dp" />
+                android:background="#336699"
+                android:textColor="#fff"
+                android:textSize="21sp"
+                android:padding="12sp"
+                android:gravity="center"
+                app:layout_constraintBottom_toTopOf="@+id/textView10"
+                app:layout_constraintEnd_toEndOf="@+id/textView10"
+                app:layout_constraintStart_toStartOf="@+id/textView10" />
 
             <TextView
-                android:id="@+id/textView6"
-                android:layout_width="wrap_content"
+                android:id="@+id/textViewBadResponse2"
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginBottom="27dp"
-                android:text="George H. W. Bush"
-                app:layout_constraintBottom_toTopOf="@+id/textView5"
-                app:layout_constraintEnd_toEndOf="@+id/textView5"
-                app:layout_constraintStart_toStartOf="@+id/textView5" />
+                android:layout_marginBottom="39dp"
+                android:gravity="center"
+                android:background="#336699"
+                android:textColor="#fff"
+                android:textSize="21sp"
+                android:padding="12sp"
+                android:text="Goerge Bush"
+                app:layout_constraintBottom_toTopOf="@+id/textView9"
+                app:layout_constraintEnd_toEndOf="@+id/textView9"
+                app:layout_constraintStart_toStartOf="@+id/textView9" />
 
             <TextView
-                android:id="@+id/textView7"
-                android:layout_width="wrap_content"
+                android:id="@+id/textViewbonneReponse"
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginBottom="33dp"
-                android:text=""
-                app:layout_constraintBottom_toTopOf="@+id/textView6"
-                app:layout_constraintEnd_toEndOf="@+id/textView6"
-                app:layout_constraintStart_toStartOf="@+id/textView6" />
-        </androidx.constraintlayout.widget.ConstraintLayout>
+                android:gravity="center"
+                android:background="#336699"
+                android:textColor="#fff"
+                android:textSize="21sp"
+                android:padding="12sp"
+                android:text="Barack Obama"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.498"
+                app:layout_constraintStart_toStartOf="parent"
+                />
+        </LinearLayout>
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 

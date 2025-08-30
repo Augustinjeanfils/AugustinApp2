@@ -13,13 +13,21 @@ class MainActivity : AppCompatActivity(){
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
-        val textviewquestion = findViewById<TextView>(R.id.textView_question)
-        val texviewrepons = findViewById<TextView>(R.id.textView_response)
-        texviewrepons.visibility = View.INVISIBLE
+        val texviewBonneReponseButton= findViewById<TextView>(R.id.textViewbonneReponse)
 
-        textviewquestion.setOnClickListener {
-            textviewquestion.visibility = View.INVISIBLE
-            texviewrepons.visibility = View.VISIBLE
+        val textViewBadResponse1= findViewById<TextView>(R.id.textViewBadResponse1)
+        val textViewBadResponse2= findViewById<TextView>(R.id.textViewBadResponse2)
+
+        textViewBadResponse1.setOnClickListener {
+            textViewBadResponse1.setBackgroundColor(getResources().getColor(R.color.red, null))
+        }
+
+        textViewBadResponse2.setOnClickListener {
+            textViewBadResponse2.setBackgroundColor(getResources().getColor(R.color.red, null))
+        }
+
+        texviewBonneReponseButton.setOnClickListener {
+            texviewBonneReponseButton.setBackgroundColor(getResources().getColor(R.color.green, null))
         }
     }
 }
